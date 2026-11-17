@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Aurelia Crest Academy and begin your admission journey.">
+  <title>Aurelia Crest Academy | Admissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar"><span>✦ Admissions enquiries are now welcome</span><span>Learning today. Leading tomorrow.</span></div>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="#home"><span class="crest">A</span><span>AURELIA CREST<small>ACADEMY</small></span></a>
+      <div class="links" id="navLinks">
+        <a href="#home">Home</a><a href="#about">Our School</a><a href="#programs">Academics</a><a href="#admissions">Admissions</a><a href="#life">Campus Life</a>
+      </div>
+      <a class="nav-cta" href="#admissions">Apply for Admission ↗</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="eyebrow">Welcome to a brighter beginning</div>
+        <h1>Where bright minds find their purpose.</h1>
+        <p>At Aurelia Crest Academy, we nurture curiosity, build confidence and equip every student with the knowledge and character to shape tomorrow.</p>
+        <div class="hero-actions"><a class="btn" href="#admissions">Begin Your Application</a><a class="btn-outline" href="#about">Discover Our School</a></div>
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="stat"><strong>01</strong><span>A community built on values</span></div>
+      <div class="stat"><strong>360°</strong><span>Learning beyond the classroom</span></div>
+      <div class="stat"><strong>∞</strong><span>Possibilities for every learner</span></div>
+    </div>
+
+    <section class="section" id="about">
+      <div class="about-grid">
+        <div class="about-image"><div class="image-note">Curiosity is the beginning of excellence.</div></div>
+        <div class="about-copy">
+          <div class="eyebrow eyebrow-dark">The Aurelia difference</div>
+          <h2>Education with ambition. A community with heart.</h2>
+          <p>We believe every student has something exceptional to contribute. Our school experience combines strong academic foundations with creativity, practical learning and personal development.</p>
+          <p>From the first day on campus, students are encouraged to ask questions, explore ideas, respect others and take ownership of their growth.</p>
+          <ul class="ticks"><li>Supportive and engaging learning environment</li><li>Focus on character, leadership and responsibility</li><li>Learning experiences that connect ideas to real life</li></ul>
+          <a class="btn" href="#admissions">Explore Enrolment</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs" id="programs">
+      <div class="section">
+        <div class="section-head"><div class="eyebrow eyebrow-dark">Learning pathways</div><h2>A strong foundation for every next step.</h2><p>Our academic pathways are designed to help learners grow in knowledge, confidence and independence.</p></div>
+        <div class="cards">
+          <article class="program-card"><div class="program-icon">✦</div><h3>Early Years</h3><p>A warm introduction to learning through discovery, guided play, language and foundational skills.</p></article>
+          <article class="program-card"><div class="program-icon">▤</div><h3>Primary School</h3><p>Building literacy, numeracy, creativity and the confidence to explore new ideas.</p></article>
+          <article class="program-card"><div class="program-icon">⌘</div><h3>Secondary School</h3><p>Developing deeper subject knowledge, critical thinking and readiness for future opportunities.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="admission" id="admissions">
+      <div class="section">
+        <div class="admission-grid">
+          <div class="admission-copy">
+            <div class="eyebrow">Your next chapter starts here</div>
+            <h2>Take the first step towards something extraordinary.</h2>
+            <p>We welcome enquiries from families who want a school experience that challenges, supports and inspires. Submit an enquiry and our admissions team can guide you through the next steps.</p>
+            <div class="steps">
+              <div class="step"><div class="step-num">1</div><div><strong>Send an enquiry</strong><span>Tell us a little about the student and the class of interest.</span></div></div>
+              <div class="step"><div class="step-num">2</div><div><strong>Speak with admissions</strong><span>Get information about requirements, visits and assessment.</span></div></div>
+              <div class="step"><div class="step-num">3</div><div><strong>Complete enrolment</strong><span>Follow the school's guidance to complete the admission process.</span></div></div>
+            </div>
+          </div>
+          <form class="form-card" id="enquiryForm">
+            <h3>Admission enquiry</h3><p>Share your details and we'll help you get started.</p>
+            <div class="form-grid">
+              <div class="field"><label for="student">Student's full name</label><input id="student" name="student" required placeholder="Enter full name"></div>
+              <div class="field"><label for="guardian">Parent / guardian name</label><input id="guardian" name="guardian" required placeholder="Your full name"></div>
+              <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+              <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" required placeholder="+234 ..."></div>
+              <div class="field"><label for="level">Class applying for</label><select id="level" name="level" required><option value="">Select a class</option><option>Early Years</option><option>Primary School</option><option>Secondary School</option></select></div>
+              <div class="field"><label for="session">Preferred entry session</label><select id="session" name="session"><option value="">Select session</option><option>First term</option><option>Second term</option><option>Third term</option><option>To be advised</option></select></div>
+              <div class="field full"><label for="message">Additional message (optional)</label><textarea id="message" name="message" placeholder="Anything you'd like our admissions team to know?"></textarea></div>
+            </div>
+            <button class="btn" type="submit">Submit Enquiry ↗</button>
+            <div class="toast" id="formToast" role="status">Your enquiry has been prepared. Connect this form to the school's email or backend to receive submissions.</div>
+            <p class="form-note">Demo form: submissions are not sent or stored. Connect a form service or backend before publishing.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="life">
+      <div class="section-head"><div class="eyebrow eyebrow-dark">Beyond the classroom</div><h2>A place to discover what makes you, you.</h2><p>Learning grows stronger when students have room to create, collaborate, participate and find their interests.</p></div>
+      <div class="life-grid"><div class="life-photo"></div><div class="life-panel"><h3>More than lessons. A whole-school experience.</h3><p>From creative projects and team activities to clubs, sports and student leadership, campus life gives learners opportunities to build friendships and develop skills that last.</p></div></div>
+    </section>
+
+    <section class="quote"><blockquote>“The future belongs to those who stay curious, keep learning and have the courage to make a difference.”</blockquote><span>The Aurelia Crest spirit</span></section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div><h3>Aurelia Crest Academy</h3><p>Inspiring confident learners, thoughtful leaders and curious minds.</p></div>
+      <div><h3>Explore</h3><a href="#about">Our School</a><a href="#programs">Academic Pathways</a><a href="#admissions">Admissions</a></div>
+      <div><h3>Contact</h3><p>Replace this section with the school's official address, phone number and email.</p><a href="#admissions">Make an enquiry ↗</a></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Aurelia Crest Academy. All rights reserved. <span style="float:right">Designed for a brighter tomorrow.</span></div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
